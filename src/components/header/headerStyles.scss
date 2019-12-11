@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic');
+
+header {
+  position: fixed;
+  margin: 0 auto;
+  width: 100vw;
+  height: 3.8rem;
+  background: darkslategray;
+  border-bottom: 2px solid firebrick;
+
+  // COUNTER DIV
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 432px;
+    min-width: 277px;
+    margin-left: 1rem;
+    span {
+      color: aliceblue;
+    }
+  }
+
+  .headerList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+    height: 100%;
+
+    .headerLi {
+      border: 2px solid aliceblue;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom: 2px solid transparent;
+      box-shadow: 1px 0 10px black;
+      display: flex;
+      flex-direction: column-reverse;
+      background: darkslategray;
+      list-style: none;
+      margin: 0 0.1rem;
+      height: 100%;
+      transition: all .2s linear;
+      a {
+        padding: 1.3rem 0.8rem;
+        height: 100%;
+        font-size: .9rem;
+        color: aliceblue;
+      }
+    }
+
+    .headerLi:hover, .headerLi:focus {
+      a{text-decoration: none}
+      border-bottom: 3px solid darkgray;
+      cursor: pointer;
+      transform: translateY(2px);
+    }
+  }
+}
+
+// MEDIA
+@media (max-width: 814px) {
+  header {
+    div {
+      width: auto;
+      min-width: auto;
+      .clickedInfo {display: none}
+      .clickedInfo {
+        color: aliceblue;
+      }
+    }
+  }
+}

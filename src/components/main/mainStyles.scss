@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,600,700&display=swap&subset=cyrillic');
+
+main {
+
+  .mainArticle {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    .mainSection {
+      width: 100%;
+      scroll-behavior: smooth;
+      font-size: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0 auto;
+    }
+
+    #firstMainSection {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 5rem;
+      background: aliceblue;
+
+      div {
+        width: 800px;
+        max-width: 90%;
+      }
+    }
+
+    #secondMainSection {
+      background: lightslategrey;
+      color: aliceblue;
+
+      div {
+        width: 800px;
+        max-width: 90%;
+
+        p {
+          text-align: center;
+          color: aliceblue;
+        }
+      }
+
+      .firstList {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          color: aliceblue;
+          list-style: none;
+
+          span {
+            color: aliceblue;
+          }
+
+          ul {
+            li {
+              color: aliceblue;
+              list-style: none;
+
+              i {
+                padding-top: .5rem;
+                text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+                width: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #thirdMainSection {
+      background: aliceblue;
+      img {
+        width: 800px;
+        max-width: 90%;
+      }
+    }
+
+    #fourthMainSection {
+      background: lightslategrey;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        max-width: 90%;
+        li {
+          padding: 0.8rem;
+          color: aliceblue;
+          list-style: none;
+          .fa-mobile-alt {
+            color: blanchedalmond;
+            text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+          }
+          .fa-envelope-open {
+            color: hotpink;
+            text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+          }
+          .fa-skype {
+            color: dodgerblue;
+            text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+          }
+          a {
+            color: aliceblue;
+            text-decoration: none;
+            .fa-telegram {
+              transition: all 0.2s linear;
+            }
+          }
+          a:hover, a:focus {
+            .fa-telegram {
+              color: deepskyblue;
+              text-shadow: 1px 1px 10px black, -1px -1px 10px black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MEDIAS
+@media (max-width: 904px) {
+
+  * {
+    font-size: .8rem;
+  }
+
+  #secondMainSection {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+
+    .firstList {
+      flex-direction: column;
+      align-items: center;
+
+      .firstListLi {
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}
